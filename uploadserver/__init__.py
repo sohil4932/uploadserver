@@ -196,10 +196,9 @@ def receive_upload(handler):
 
 class SimpleHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
     def end_headers(self):
+        sdef end_headers (self):
         self.send_header('Access-Control-Allow-Origin', '*')
-        self.send_header('Access-Control-Allow-Methods', 'POST')
-        self.send_header('Cache-Control', 'no-store, no-cache, must-revalidate')
-        return super(SimpleHTTPRequestHandler, self).end_headers()
+        http.server.SimpleHTTPRequestHandler.end_headers(self)
     
     def do_GET(self):
         if self.path == '/upload': send_upload_page(self)
