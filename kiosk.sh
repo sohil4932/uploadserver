@@ -16,3 +16,5 @@ cd /home/psm/uploadserver; python3 -m uploadserver --directory=/home/psm/booth/ 
 #nginx.conf /etc/nginx/nginx.conf
 
 #/usr/share/nginx/html
+
+#git clone https://github.com/yashgautami/psm-booth-dist.git
