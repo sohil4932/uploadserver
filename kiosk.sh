@@ -12,3 +12,7 @@ firefox --window-size=1920,1080 --kiosk --window-position=0,0 http://localhost/c
 cd /home/psm/uploadserver; python3 -m uploadserver --directory=/home/psm/booth/ &
 
 #*/5 * * * * rm /home/psm/booth/*
+
+#nginx.conf /etc/nginx/nginx.conf
+
+#/usr/share/nginx/html
